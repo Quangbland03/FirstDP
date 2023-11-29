@@ -1,0 +1,23 @@
+<form action="/mobile/add" method="post">
+  Brand model:
+  <input type="text" name="model" required />
+  <br />
+  Mobile image:
+  <input type="url" name="image" required />
+  <br />
+  Mobile color:
+  <input type="radio" name="color" id="" value="black" /> black
+  <input type="radio" name="color" id="" value="white" /> white
+  <input type="radio" name="color" id="" value="yellow" /> yellow
+  <input type="radio" name="color" id="" value="blue" /> blue
+  <br />
+  Mobile brand:
+  <br />brand
+  <select name="brand" id="">
+    {{#each brand}}
+      <option value="{{_id}}">{{name}}</option>
+    {{/each}}
+  </select>
+  <input type="submit" value="ADD" />
+
+</form>

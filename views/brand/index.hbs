@@ -1,0 +1,14 @@
+<a href="/brand/add">Add</a>
+<table border="1">
+  <tr>
+    <th>Mobile name</th>
+    <th>Mobile country</th>
+
+  </tr>
+  {{#each mobile}}
+    <tr>
+        <a href="/brand/detail/{{_id}}">{{name}}</a>
+      <td>{{country}}</td>
+    </tr>
+  {{/each}}
+</table>
